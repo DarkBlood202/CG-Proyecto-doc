@@ -1,12 +1,12 @@
 <map id="AppOpenGL" name="AppOpenGL">
-<area shape="rect" id="node1" title=" " alt="" coords="369,784,483,1169"/>
-<area shape="rect" id="node2" href="$class_torus.html" title=" " alt="" coords="363,387,489,597"/>
-<area shape="rect" id="node3" href="$class_shape.html" title=" " alt="" coords="114,5,255,200"/>
-<area shape="rect" id="node7" href="$class_cylinder.html" title=" " alt="" coords="5,307,180,677"/>
-<area shape="rect" id="node10" href="$class_sphere.html" title=" " alt="" coords="205,307,338,677"/>
-<area shape="rect" id="node4" href="$class_vertex_array.html" title=" " alt="" coords="280,13,399,193"/>
-<area shape="rect" id="node5" href="$class_index_buffer.html" title=" " alt="" coords="422,5,539,200"/>
-<area shape="rect" id="node6" href="$class_vertex_buffer.html" title=" " alt="" coords="563,20,686,185"/>
-<area shape="rect" id="node8" href="$class_shader.html" title=" " alt="" coords="514,314,695,670"/>
-<area shape="rect" id="node9" href="$class_cubesphere.html" title=" " alt="" coords="720,277,903,707"/>
+<area shape="rect" id="node1" title=" " alt="" coords="386,799,501,1184"/>
+<area shape="rect" id="node2" href="$class_torus.html" title=" " alt="" coords="363,395,524,619"/>
+<area shape="rect" id="node3" href="$class_shape.html" title=" " alt="" coords="126,13,267,207"/>
+<area shape="rect" id="node7" href="$class_cylinder.html" title=" " alt="" coords="5,321,180,692"/>
+<area shape="rect" id="node10" href="$class_sphere.html" title=" " alt="" coords="205,321,338,692"/>
+<area shape="rect" id="node4" href="$class_vertex_array.html" title=" " alt="" coords="292,20,411,200"/>
+<area shape="rect" id="node5" href="$class_index_buffer.html" title=" " alt="" coords="434,5,551,215"/>
+<area shape="rect" id="node6" href="$class_vertex_buffer.html" title=" " alt="" coords="575,20,698,200"/>
+<area shape="rect" id="node8" href="$class_shader.html" title=" " alt="" coords="549,329,730,685"/>
+<area shape="rect" id="node9" href="$class_cubesphere.html" title=" " alt="" coords="755,292,937,721"/>
 </map>

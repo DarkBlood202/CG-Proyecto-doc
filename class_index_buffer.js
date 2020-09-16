@@ -4,6 +4,7 @@ var class_index_buffer =
     [ "~IndexBuffer", "class_index_buffer.html#a348889936f378b7942c1e01d83e42866", null ],
     [ "allocate", "class_index_buffer.html#a7d5e54189f6f6e06fe40d9b77b1985b2", null ],
     [ "bind", "class_index_buffer.html#ae9d8b583fd99e86874cc8c46f2ed1c17", null ],
+    [ "create", "class_index_buffer.html#a5066c5578780cd5c58daefbe1c3059b7", null ],
     [ "destroy", "class_index_buffer.html#a37a60417fb02a97cd425f787ad1112e3", null ],
     [ "getCount", "class_index_buffer.html#af3cf5177ad9904da31846f59535b53d3", null ],
     [ "getID", "class_index_buffer.html#ae2c3335e41b6158b7e16d87a8d14d428", null ],

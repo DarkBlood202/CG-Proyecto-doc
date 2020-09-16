@@ -8,6 +8,7 @@ var class_cylinder =
     [ "addVertex", "class_cylinder.html#af0417d8c48edfe68137d344227a6f86b", null ],
     [ "buildUnitCircleVertices", "class_cylinder.html#a6dfbf746a77c6ac49a866d5a4c72d83f", null ],
     [ "clearArrays", "class_cylinder.html#aa0325f609535b279eadc1f288d393ccd", null ],
+    [ "createVertexObjects", "class_cylinder.html#a0928a981a4972252fba8f348cfc63260", null ],
     [ "getSideNormals", "class_cylinder.html#a721c8d94f0c02958780a708210ac721c", null ],
     [ "initData", "class_cylinder.html#acd4e192efea1bf4c42998d1292d6fb71", null ],
     [ "renderFill", "class_cylinder.html#a6cc9d04159a22088c4c81b54c85727c9", null ],

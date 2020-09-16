@@ -26,7 +26,6 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CG - Proyecto
-   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Proyecto computacion visual</div>
   </td>
@@ -88,39 +87,42 @@ $(document).ready(function(){initNavTree('index__buffer_8cpp_source.html',''); i
 </div><!--header-->
 <div class="contents">
 <a href="index__buffer_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="index__buffer_8h.html">index_buffer.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;GL/glew.h&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;GL\glew.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_index_buffer.html#a37a60417fb02a97cd425f787ad1112e3">    5</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_index_buffer.html#a37a60417fb02a97cd425f787ad1112e3">IndexBuffer::destroy</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    glDeleteBuffers(1, &amp;<a class="code" href="class_index_buffer.html#a9c53bc26aef909a6f8427fc057a4f1d2">m_RendererID</a>);</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_index_buffer.html#a5066c5578780cd5c58daefbe1c3059b7">    5</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_index_buffer.html#a5066c5578780cd5c58daefbe1c3059b7">IndexBuffer::create</a>(){</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    glGenBuffers(1, &amp;<a class="code" href="class_index_buffer.html#a9c53bc26aef909a6f8427fc057a4f1d2">m_RendererID</a>) ;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_index_buffer.html#a7d5e54189f6f6e06fe40d9b77b1985b2">    9</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_index_buffer.html#a7d5e54189f6f6e06fe40d9b77b1985b2">IndexBuffer::allocate</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* indices, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count){</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_index_buffer.html#a5dba68aecb6b96a40ec624eab2f4217d">m_Count</a> = count;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    glGenBuffers(1, &amp;<a class="code" href="class_index_buffer.html#a9c53bc26aef909a6f8427fc057a4f1d2">m_RendererID</a>) ;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, <a class="code" href="class_index_buffer.html#a9c53bc26aef909a6f8427fc057a4f1d2">m_RendererID</a>) ;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    glBufferData(GL_ELEMENT_ARRAY_BUFFER, count * <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>), indices, GL_STATIC_DRAW) ;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_index_buffer.html#a37a60417fb02a97cd425f787ad1112e3">    9</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_index_buffer.html#a37a60417fb02a97cd425f787ad1112e3">IndexBuffer::destroy</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    glDeleteBuffers(1, &amp;<a class="code" href="class_index_buffer.html#a9c53bc26aef909a6f8427fc057a4f1d2">m_RendererID</a>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_index_buffer.html#a7d5e54189f6f6e06fe40d9b77b1985b2">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_index_buffer.html#a7d5e54189f6f6e06fe40d9b77b1985b2">IndexBuffer::allocate</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* indices, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_index_buffer.html#a5dba68aecb6b96a40ec624eab2f4217d">m_Count</a> = count;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, <a class="code" href="class_index_buffer.html#a9c53bc26aef909a6f8427fc057a4f1d2">m_RendererID</a>) ;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    glBufferData(GL_ELEMENT_ARRAY_BUFFER, count * <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>), indices, GL_STATIC_DRAW) ;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_index_buffer.html#ae9d8b583fd99e86874cc8c46f2ed1c17">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_index_buffer.html#ae9d8b583fd99e86874cc8c46f2ed1c17">IndexBuffer::bind</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, <a class="code" href="class_index_buffer.html#a9c53bc26aef909a6f8427fc057a4f1d2">m_RendererID</a>) ;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_index_buffer.html#a29815a01631f16261b0c7e1b9a6959ea">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_index_buffer.html#a29815a01631f16261b0c7e1b9a6959ea">IndexBuffer::unbind</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0) ;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_index_buffer.html#ae9d8b583fd99e86874cc8c46f2ed1c17">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_index_buffer.html#ae9d8b583fd99e86874cc8c46f2ed1c17">IndexBuffer::bind</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, <a class="code" href="class_index_buffer.html#a9c53bc26aef909a6f8427fc057a4f1d2">m_RendererID</a>) ;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_index_buffer.html#a29815a01631f16261b0c7e1b9a6959ea">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_index_buffer.html#a29815a01631f16261b0c7e1b9a6959ea">IndexBuffer::unbind</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0) ;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_index_buffer_html_a9c53bc26aef909a6f8427fc057a4f1d2"><div class="ttname"><a href="class_index_buffer.html#a9c53bc26aef909a6f8427fc057a4f1d2">IndexBuffer::m_RendererID</a></div><div class="ttdeci">unsigned int m_RendererID</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8h_source.html#l00007">index_buffer.h:7</a></div></div>
-<div class="ttc" id="aclass_index_buffer_html_ae9d8b583fd99e86874cc8c46f2ed1c17"><div class="ttname"><a href="class_index_buffer.html#ae9d8b583fd99e86874cc8c46f2ed1c17">IndexBuffer::bind</a></div><div class="ttdeci">void bind() const</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8cpp_source.html#l00018">index_buffer.cpp:18</a></div></div>
-<div class="ttc" id="aclass_index_buffer_html_a37a60417fb02a97cd425f787ad1112e3"><div class="ttname"><a href="class_index_buffer.html#a37a60417fb02a97cd425f787ad1112e3">IndexBuffer::destroy</a></div><div class="ttdeci">void destroy() const</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8cpp_source.html#l00005">index_buffer.cpp:5</a></div></div>
+<div class="ttc" id="aclass_index_buffer_html_a5066c5578780cd5c58daefbe1c3059b7"><div class="ttname"><a href="class_index_buffer.html#a5066c5578780cd5c58daefbe1c3059b7">IndexBuffer::create</a></div><div class="ttdeci">void create()</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8cpp_source.html#l00005">index_buffer.cpp:5</a></div></div>
+<div class="ttc" id="aclass_index_buffer_html_ae9d8b583fd99e86874cc8c46f2ed1c17"><div class="ttname"><a href="class_index_buffer.html#ae9d8b583fd99e86874cc8c46f2ed1c17">IndexBuffer::bind</a></div><div class="ttdeci">void bind() const</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8cpp_source.html#l00020">index_buffer.cpp:20</a></div></div>
+<div class="ttc" id="aclass_index_buffer_html_a37a60417fb02a97cd425f787ad1112e3"><div class="ttname"><a href="class_index_buffer.html#a37a60417fb02a97cd425f787ad1112e3">IndexBuffer::destroy</a></div><div class="ttdeci">void destroy() const</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8cpp_source.html#l00009">index_buffer.cpp:9</a></div></div>
 <div class="ttc" id="aclass_index_buffer_html_a5dba68aecb6b96a40ec624eab2f4217d"><div class="ttname"><a href="class_index_buffer.html#a5dba68aecb6b96a40ec624eab2f4217d">IndexBuffer::m_Count</a></div><div class="ttdeci">unsigned int m_Count</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8h_source.html#l00008">index_buffer.h:8</a></div></div>
-<div class="ttc" id="aclass_index_buffer_html_a29815a01631f16261b0c7e1b9a6959ea"><div class="ttname"><a href="class_index_buffer.html#a29815a01631f16261b0c7e1b9a6959ea">IndexBuffer::unbind</a></div><div class="ttdeci">void unbind() const</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8cpp_source.html#l00023">index_buffer.cpp:23</a></div></div>
-<div class="ttc" id="aclass_index_buffer_html_a7d5e54189f6f6e06fe40d9b77b1985b2"><div class="ttname"><a href="class_index_buffer.html#a7d5e54189f6f6e06fe40d9b77b1985b2">IndexBuffer::allocate</a></div><div class="ttdeci">void allocate(const unsigned int *indices, unsigned int count)</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8cpp_source.html#l00009">index_buffer.cpp:9</a></div></div>
+<div class="ttc" id="aclass_index_buffer_html_a29815a01631f16261b0c7e1b9a6959ea"><div class="ttname"><a href="class_index_buffer.html#a29815a01631f16261b0c7e1b9a6959ea">IndexBuffer::unbind</a></div><div class="ttdeci">void unbind() const</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8cpp_source.html#l00025">index_buffer.cpp:25</a></div></div>
+<div class="ttc" id="aclass_index_buffer_html_a7d5e54189f6f6e06fe40d9b77b1985b2"><div class="ttname"><a href="class_index_buffer.html#a7d5e54189f6f6e06fe40d9b77b1985b2">IndexBuffer::allocate</a></div><div class="ttdeci">void allocate(const unsigned int *indices, unsigned int count)</div><div class="ttdef"><b>Definition:</b> <a href="index__buffer_8cpp_source.html#l00013">index_buffer.cpp:13</a></div></div>
 <div class="ttc" id="aindex__buffer_8h_html"><div class="ttname"><a href="index__buffer_8h.html">index_buffer.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

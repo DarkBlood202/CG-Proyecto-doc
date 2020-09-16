@@ -8,6 +8,7 @@ var class_sphere =
     [ "addVertex", "class_sphere.html#a784f2529b648047b0b9724531f677fb4", null ],
     [ "clearArrays", "class_sphere.html#a7cb511b84be854943b3ff5865509920c", null ],
     [ "computeFaceNormal", "class_sphere.html#a4d98e0709c418acdb87a8bb5870e2de8", null ],
+    [ "createVertexObjects", "class_sphere.html#a3383968190e12ffc1922d445edff8929", null ],
     [ "getRadius", "class_sphere.html#a925a4eccca10735eb3f9ec03ad87abf1", null ],
     [ "getSectorCount", "class_sphere.html#aecdbed80976f8b1b865e58502329a380", null ],
     [ "getStackCount", "class_sphere.html#a54dc5b024b79cd4778b0b831ad48af05", null ],

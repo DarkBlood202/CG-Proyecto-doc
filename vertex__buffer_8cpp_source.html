@@ -26,7 +26,6 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CG - Proyecto
-   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Proyecto computacion visual</div>
   </td>
@@ -90,35 +89,39 @@ $(document).ready(function(){initNavTree('vertex__buffer_8cpp_source.html',''); 
 <a href="vertex__buffer_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vertex__buffer_8h.html">vertex_buffer.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_vertex_buffer.html#adfd5a837011fe429bcb9f1f15cc06088">    4</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_vertex_buffer.html#adfd5a837011fe429bcb9f1f15cc06088">VertexBuffer::allocate</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* data, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> size_bytes)</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    glGenBuffers(1, &amp;<a class="code" href="class_vertex_buffer.html#a1bd5ca5551f0b5797fe7e008abbcca03">m_RendererID</a>);</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, <a class="code" href="class_vertex_buffer.html#a1bd5ca5551f0b5797fe7e008abbcca03">m_RendererID</a>);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    glBufferData(GL_ARRAY_BUFFER, size_bytes, data, GL_STATIC_DRAW);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_vertex_buffer.html#afc06aa70b14e2379e8565afb2e017bd2">   11</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_vertex_buffer.html#afc06aa70b14e2379e8565afb2e017bd2">VertexBuffer::bind</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, <a class="code" href="class_vertex_buffer.html#a1bd5ca5551f0b5797fe7e008abbcca03">m_RendererID</a>);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_vertex_buffer.html#a85fad27f8f068b0610ff052a2a5496f1">   16</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_vertex_buffer.html#a85fad27f8f068b0610ff052a2a5496f1">VertexBuffer::unbind</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, 0);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_vertex_buffer.html#ab8856015451d3e88ce77fd062b7f10d3">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_vertex_buffer.html#ab8856015451d3e88ce77fd062b7f10d3">VertexBuffer::destroy</a>() </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    glDeleteBuffers(1, &amp;<a class="code" href="class_vertex_buffer.html#a1bd5ca5551f0b5797fe7e008abbcca03">m_RendererID</a>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_vertex_buffer.html#ab9350ea2d4b6695d43ce4e5360a6658c">    4</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_vertex_buffer.html#ab9350ea2d4b6695d43ce4e5360a6658c">VertexBuffer::create</a>(){</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    glGenBuffers(1, &amp;<a class="code" href="class_vertex_buffer.html#a1bd5ca5551f0b5797fe7e008abbcca03">m_RendererID</a>);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_vertex_buffer.html#adfd5a837011fe429bcb9f1f15cc06088">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_vertex_buffer.html#adfd5a837011fe429bcb9f1f15cc06088">VertexBuffer::allocate</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* data, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> size_bytes)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, <a class="code" href="class_vertex_buffer.html#a1bd5ca5551f0b5797fe7e008abbcca03">m_RendererID</a>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    glBufferData(GL_ARRAY_BUFFER, size_bytes, data, GL_STATIC_DRAW);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_vertex_buffer.html#afc06aa70b14e2379e8565afb2e017bd2">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_vertex_buffer.html#afc06aa70b14e2379e8565afb2e017bd2">VertexBuffer::bind</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, <a class="code" href="class_vertex_buffer.html#a1bd5ca5551f0b5797fe7e008abbcca03">m_RendererID</a>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_vertex_buffer.html#a85fad27f8f068b0610ff052a2a5496f1">   19</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_vertex_buffer.html#a85fad27f8f068b0610ff052a2a5496f1">VertexBuffer::unbind</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, 0);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_vertex_buffer.html#ab8856015451d3e88ce77fd062b7f10d3">   24</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_vertex_buffer.html#ab8856015451d3e88ce77fd062b7f10d3">VertexBuffer::destroy</a>() </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    glDeleteBuffers(1, &amp;<a class="code" href="class_vertex_buffer.html#a1bd5ca5551f0b5797fe7e008abbcca03">m_RendererID</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="avertex__buffer_8h_html"><div class="ttname"><a href="vertex__buffer_8h.html">vertex_buffer.h</a></div></div>
-<div class="ttc" id="aclass_vertex_buffer_html_a85fad27f8f068b0610ff052a2a5496f1"><div class="ttname"><a href="class_vertex_buffer.html#a85fad27f8f068b0610ff052a2a5496f1">VertexBuffer::unbind</a></div><div class="ttdeci">void unbind() const</div><div class="ttdef"><b>Definition:</b> <a href="vertex__buffer_8cpp_source.html#l00016">vertex_buffer.cpp:16</a></div></div>
-<div class="ttc" id="aclass_vertex_buffer_html_ab8856015451d3e88ce77fd062b7f10d3"><div class="ttname"><a href="class_vertex_buffer.html#ab8856015451d3e88ce77fd062b7f10d3">VertexBuffer::destroy</a></div><div class="ttdeci">void destroy()</div><div class="ttdef"><b>Definition:</b> <a href="vertex__buffer_8cpp_source.html#l00021">vertex_buffer.cpp:21</a></div></div>
+<div class="ttc" id="aclass_vertex_buffer_html_a85fad27f8f068b0610ff052a2a5496f1"><div class="ttname"><a href="class_vertex_buffer.html#a85fad27f8f068b0610ff052a2a5496f1">VertexBuffer::unbind</a></div><div class="ttdeci">void unbind() const</div><div class="ttdef"><b>Definition:</b> <a href="vertex__buffer_8cpp_source.html#l00019">vertex_buffer.cpp:19</a></div></div>
+<div class="ttc" id="aclass_vertex_buffer_html_ab9350ea2d4b6695d43ce4e5360a6658c"><div class="ttname"><a href="class_vertex_buffer.html#ab9350ea2d4b6695d43ce4e5360a6658c">VertexBuffer::create</a></div><div class="ttdeci">void create()</div><div class="ttdef"><b>Definition:</b> <a href="vertex__buffer_8cpp_source.html#l00004">vertex_buffer.cpp:4</a></div></div>
+<div class="ttc" id="aclass_vertex_buffer_html_ab8856015451d3e88ce77fd062b7f10d3"><div class="ttname"><a href="class_vertex_buffer.html#ab8856015451d3e88ce77fd062b7f10d3">VertexBuffer::destroy</a></div><div class="ttdeci">void destroy()</div><div class="ttdef"><b>Definition:</b> <a href="vertex__buffer_8cpp_source.html#l00024">vertex_buffer.cpp:24</a></div></div>
 <div class="ttc" id="aclass_vertex_buffer_html_a1bd5ca5551f0b5797fe7e008abbcca03"><div class="ttname"><a href="class_vertex_buffer.html#a1bd5ca5551f0b5797fe7e008abbcca03">VertexBuffer::m_RendererID</a></div><div class="ttdeci">unsigned int m_RendererID</div><div class="ttdef"><b>Definition:</b> <a href="vertex__buffer_8h_source.html#l00009">vertex_buffer.h:9</a></div></div>
-<div class="ttc" id="aclass_vertex_buffer_html_afc06aa70b14e2379e8565afb2e017bd2"><div class="ttname"><a href="class_vertex_buffer.html#afc06aa70b14e2379e8565afb2e017bd2">VertexBuffer::bind</a></div><div class="ttdeci">void bind() const</div><div class="ttdef"><b>Definition:</b> <a href="vertex__buffer_8cpp_source.html#l00011">vertex_buffer.cpp:11</a></div></div>
-<div class="ttc" id="aclass_vertex_buffer_html_adfd5a837011fe429bcb9f1f15cc06088"><div class="ttname"><a href="class_vertex_buffer.html#adfd5a837011fe429bcb9f1f15cc06088">VertexBuffer::allocate</a></div><div class="ttdeci">void allocate(const void *data, unsigned int size)</div><div class="ttdef"><b>Definition:</b> <a href="vertex__buffer_8cpp_source.html#l00004">vertex_buffer.cpp:4</a></div></div>
+<div class="ttc" id="aclass_vertex_buffer_html_afc06aa70b14e2379e8565afb2e017bd2"><div class="ttname"><a href="class_vertex_buffer.html#afc06aa70b14e2379e8565afb2e017bd2">VertexBuffer::bind</a></div><div class="ttdeci">void bind() const</div><div class="ttdef"><b>Definition:</b> <a href="vertex__buffer_8cpp_source.html#l00014">vertex_buffer.cpp:14</a></div></div>
+<div class="ttc" id="aclass_vertex_buffer_html_adfd5a837011fe429bcb9f1f15cc06088"><div class="ttname"><a href="class_vertex_buffer.html#adfd5a837011fe429bcb9f1f15cc06088">VertexBuffer::allocate</a></div><div class="ttdeci">void allocate(const void *data, unsigned int size)</div><div class="ttdef"><b>Definition:</b> <a href="vertex__buffer_8cpp_source.html#l00008">vertex_buffer.cpp:8</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

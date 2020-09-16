@@ -26,7 +26,6 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CG - Proyecto
-   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Proyecto computacion visual</div>
   </td>
@@ -156,14 +155,8 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>bronzeSpecular()
 : <a class="el" href="class_utils.html#a6c6d8c9d779382ad022bf2bdb3c9fc3e">Utils</a>
 </li>
-<li>buildInterleavedVertices()
-: <a class="el" href="class_cubesphere.html#ad05895c6e0cfcdc8db0052d7418990b7">Cubesphere</a>
-</li>
 <li>buildUnitCircleVertices()
 : <a class="el" href="class_cylinder.html#a6dfbf746a77c6ac49a866d5a4c72d83f">Cylinder</a>
-</li>
-<li>buildVerticesFlat()
-: <a class="el" href="class_cubesphere.html#a8420bce18e4bf3cc05cb59819cdab057">Cubesphere</a>
 </li>
 <li>buildVerticesSmooth()
 : <a class="el" href="class_cubesphere.html#aaf44ee1fab54dbbdbda175e9833fd6d1">Cubesphere</a>
@@ -194,11 +187,19 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="class_cubesphere.html#aa3aea19b761448635106ef1ab17dc6bd">Cubesphere</a>
 </li>
 <li>create()
-: <a class="el" href="class_vertex_array.html#abdff0822c1124c37bd10bca86bd0f616">VertexArray</a>
+: <a class="el" href="class_index_buffer.html#a5066c5578780cd5c58daefbe1c3059b7">IndexBuffer</a>
+, <a class="el" href="class_vertex_array.html#abdff0822c1124c37bd10bca86bd0f616">VertexArray</a>
+, <a class="el" href="class_vertex_buffer.html#ab9350ea2d4b6695d43ce4e5360a6658c">VertexBuffer</a>
 </li>
 <li>createShaderProgram()
 : <a class="el" href="class_shader.html#a8f5ccfa9af6a750f1d74f76aa6c351bb">Shader</a>
-, <a class="el" href="class_utils.html#a63bb58de513640e5cfe275f42c51ba64">Utils</a>
+, <a class="el" href="class_utils.html#afae18dd3739278d559adc46632b24376">Utils</a>
+</li>
+<li>createVertexObjects()
+: <a class="el" href="class_cubesphere.html#a52ad4df02de354f74392d5d1af69d23d">Cubesphere</a>
+, <a class="el" href="class_cylinder.html#a0928a981a4972252fba8f348cfc63260">Cylinder</a>
+, <a class="el" href="class_sphere.html#a3383968190e12ffc1922d445edff8929">Sphere</a>
+, <a class="el" href="class_torus.html#aa4d4a5e176eb05f6b3314834433adccc">Torus</a>
 </li>
 <li>Cube()
 : <a class="el" href="class_cube.html#a620c96705f0494cd2e761ade0daf0aff">Cube</a>
@@ -220,18 +221,6 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>display()
 : <a class="el" href="class_app_open_g_l.html#a8e3c91b95818cd8ad54afa836d18bc73">AppOpenGL</a>
-</li>
-<li>draw()
-: <a class="el" href="class_cubesphere.html#acfa26a6be779d6a8b3f38a33f9125918">Cubesphere</a>
-</li>
-<li>drawFace()
-: <a class="el" href="class_cubesphere.html#a2688f75c37fa3657a186126c0567484c">Cubesphere</a>
-</li>
-<li>drawLines()
-: <a class="el" href="class_cubesphere.html#a3c6f488fdf47186706d813ecffca5db4">Cubesphere</a>
-</li>
-<li>drawWithLines()
-: <a class="el" href="class_cubesphere.html#ac17fc93b35e7e9ee258919d39e4cbf0e">Cubesphere</a>
 </li>
 </ul>
 
@@ -424,8 +413,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="class_utils.html#a13e683b351c1faba4b07e4d02cf02982">Utils</a>
 </li>
 <li>printSelf()
-: <a class="el" href="class_cubesphere.html#a829ea402ec672850060f50e06261a045">Cubesphere</a>
-, <a class="el" href="class_sphere.html#a101fab878131bd3b0a4199a6a8206e73">Sphere</a>
+: <a class="el" href="class_sphere.html#a101fab878131bd3b0a4199a6a8206e73">Sphere</a>
 </li>
 <li>printShaderLog()
 : <a class="el" href="class_utils.html#a38a82c725b21f8938a530b91e7d3637e">Utils</a>
@@ -490,8 +478,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 , <a class="el" href="class_torus.html#ae1c3532bf4a45609f2f66a0694e351c1">Torus</a>
 </li>
 <li>setRadius()
-: <a class="el" href="class_cubesphere.html#a934afa765d4199a84b47407d0176d527">Cubesphere</a>
-, <a class="el" href="class_sphere.html#a9a563adc1ae20e8b1866caf8f2fb0285">Sphere</a>
+: <a class="el" href="class_sphere.html#a9a563adc1ae20e8b1866caf8f2fb0285">Sphere</a>
 </li>
 <li>setSectorCount()
 : <a class="el" href="class_sphere.html#ad1bcba9994f79c49c1c0281f65bb1522">Sphere</a>
@@ -500,18 +487,11 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="class_cylinder.html#a4860d36671d6fcf0da4c06e628923a40">Cylinder</a>
 , <a class="el" href="class_sphere.html#a966753e0cd7ec06174d904fbd238df7a">Sphere</a>
 </li>
-<li>setSideLength()
-: <a class="el" href="class_cubesphere.html#ada35c339892a5c97923d3c2bacbad4c9">Cubesphere</a>
-</li>
 <li>setSmooth()
-: <a class="el" href="class_cubesphere.html#a4ce8949b2a131962033cbe7da4a033f6">Cubesphere</a>
-, <a class="el" href="class_sphere.html#a4acdc17f810c98773ac07a8e78f4deee">Sphere</a>
+: <a class="el" href="class_sphere.html#a4acdc17f810c98773ac07a8e78f4deee">Sphere</a>
 </li>
 <li>setStackCount()
 : <a class="el" href="class_sphere.html#aa586ff623f02a810a4ee9f04c40cbf83">Sphere</a>
-</li>
-<li>setSubdivision()
-: <a class="el" href="class_cubesphere.html#a3fe6609a2ab11495ed6e38c270e54fbb">Cubesphere</a>
 </li>
 <li>setUniform1f()
 : <a class="el" href="class_shader.html#a514a718cd4afdbe525cc977963d46c54">Shader</a>
@@ -535,7 +515,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="class_app_open_g_l.html#ab924cf0ad36fc9a6b6094e39ff84c410">AppOpenGL</a>
 </li>
 <li>Shader()
-: <a class="el" href="class_shader.html#abf4dbe0b418f781eeb6f66813c54f197">Shader</a>
+: <a class="el" href="class_shader.html#a0d654ebaca4e0555197c0724c6d30610">Shader</a>
 </li>
 <li>Shape()
 : <a class="el" href="class_shape.html#aaa8d87171e65e0d8ba3c5459978992a7">Shape</a>

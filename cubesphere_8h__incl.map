@@ -1,6 +1,7 @@
 <map id="src/cubesphere.h" name="src/cubesphere.h">
-<area shape="rect" id="node1" title=" " alt="" coords="51,5,173,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,64,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="89,80,135,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="160,80,219,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="118,5,241,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,87,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="111,80,170,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="195,80,241,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="266,80,325,107"/>
 </map>

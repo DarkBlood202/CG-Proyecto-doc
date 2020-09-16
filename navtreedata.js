@@ -30,9 +30,7 @@ var NAVTREE =
       [ "Miembros del Namespace ", "namespacemembers.html", [
         [ "Todo", "namespacemembers.html", null ],
         [ "Funciones", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Enumeraciones", "namespacemembers_enum.html", null ],
-        [ "Valores de enumeraciones", "namespacemembers_eval.html", null ]
+        [ "Variables", "namespacemembers_vars.html", null ]
       ] ]
     ] ],
     [ "Clases", "annotated.html", [
@@ -60,8 +58,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_sphere.html#a7a6c93a9e00ae34f0307f982ba30a8a9",
-"vertex__buffer_8h_source.html"
+"class_sphere.html#a94dd6aa1ca8629cd226fc1da245410ca"
 ];
 
 var SYNCONMSG = 'click en deshabilitar sincronización';

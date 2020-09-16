@@ -56,9 +56,7 @@ var menudata={children:[
 {text:"s",url:"namespacemembers_vars.html#index_s"},
 {text:"t",url:"namespacemembers_vars.html#index_t"},
 {text:"v",url:"namespacemembers_vars.html#index_v"},
-{text:"z",url:"namespacemembers_vars.html#index_z"}]},
-{text:"Enumeraciones",url:"namespacemembers_enum.html"},
-{text:"Valores de enumeraciones",url:"namespacemembers_eval.html"}]}]},
+{text:"z",url:"namespacemembers_vars.html#index_z"}]}]}]},
 {text:"Clases",url:"annotated.html",children:[
 {text:"Lista de clases",url:"annotated.html"},
 {text:"Índice de clases",url:"classes.html"},

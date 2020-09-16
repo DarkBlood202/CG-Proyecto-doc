@@ -1,20 +1,14 @@
 var imgui__win_8hpp =
 [
-    [ "SHAPE", "imgui__win_8hpp.html#aa786efb9f99f069c0096aaa689b180f8", [
-      [ "CUBE", "imgui__win_8hpp.html#aa786efb9f99f069c0096aaa689b180f8a3760bdc0c7196c98f68a8cb098622a55", null ],
-      [ "CYLINDER", "imgui__win_8hpp.html#aa786efb9f99f069c0096aaa689b180f8a310756b2a7c2be824251a4b28d200b79", null ],
-      [ "CONE", "imgui__win_8hpp.html#aa786efb9f99f069c0096aaa689b180f8a7d8648d72026dabacda603b9d24dff0c", null ],
-      [ "SPHERE", "imgui__win_8hpp.html#aa786efb9f99f069c0096aaa689b180f8a0856f470693826b70643b5537b466a72", null ],
-      [ "SPECIAL", "imgui__win_8hpp.html#aa786efb9f99f069c0096aaa689b180f8a1700d5fe89e7ccab96e939eabea0c545", null ]
-    ] ],
     [ "cleanAll", "imgui__win_8hpp.html#ad70310cae3f568bb6659fc1c5a135ed0", null ],
     [ "editPropCone", "imgui__win_8hpp.html#a98c1c96be8e6eb3694a755d597696821", null ],
     [ "editPropCylinder", "imgui__win_8hpp.html#a49075acca1587b0ecbd28634cb7408d9", null ],
     [ "editPropSphere", "imgui__win_8hpp.html#ab2aa42e737b568d34f534ec1324fdf18", null ],
     [ "editPropTorus", "imgui__win_8hpp.html#a275cf59496ed0c34dd53b269dc4e1b11", null ],
     [ "endMainWindow", "imgui__win_8hpp.html#afdbf56f28d86913955ad52bab5d5612c", null ],
-    [ "optFigure", "imgui__win_8hpp.html#a6fc41b5a94e5326298a13866648c0c2d", null ],
+    [ "optShaders", "imgui__win_8hpp.html#af04b7ee98f9c058610f4d2bf6bfe375f", null ],
     [ "renderMainWindow", "imgui__win_8hpp.html#a109f538a7f4f491a1b593378ce6f304a", null ],
+    [ "startup", "imgui__win_8hpp.html#ac287abcc3c5bfbee9ba3ba36d279ca49", null ],
     [ "color_figura", "imgui__win_8hpp.html#add2e69787b404e558ef1735d2968a1aa", null ],
     [ "con_heigth", "imgui__win_8hpp.html#a5437053ca066a1a3e8ce9453c3cb9369", null ],
     [ "con_prop_listener", "imgui__win_8hpp.html#af26754a8e0eaa9db8aeaee033cbc08c1", null ],
@@ -34,6 +28,7 @@ var imgui__win_8hpp =
     [ "segments_event_listener", "imgui__win_8hpp.html#ad6a0ceb3f63235b6fe6d2a1c77bdae07", null ],
     [ "segments_x", "imgui__win_8hpp.html#afc2859f25367356154541de7d6d7b68c", null ],
     [ "segments_y", "imgui__win_8hpp.html#a09f3ec78ec70615d6f9e7e4151646a8d", null ],
+    [ "shader_opt", "imgui__win_8hpp.html#aa6bfbf90d8692298a2f81c133a42e113", null ],
     [ "show_fill", "imgui__win_8hpp.html#aea62089c30e714eab600bbc4248ff9aa", null ],
     [ "show_normals", "imgui__win_8hpp.html#aa0538025ee1bc3f1737d082d5b9c6d65", null ],
     [ "show_smooth", "imgui__win_8hpp.html#a75219a38ace753cb1b1972b0bff784f7", null ],

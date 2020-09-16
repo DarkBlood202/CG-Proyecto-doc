@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CG - Proyecto: Fichero Fuente src/sphere.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CG - Proyecto
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Proyecto computacion visual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('sphere_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">sphere.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sphere_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SPHERE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SPHERE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="shape_8h.html">shape.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_sphere.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sphere.html">Sphere</a>: <span class="keyword">public</span> <a class="code" href="class_shape.html">Shape</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">// ctor/dtor</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_sphere.html#a05c3a9397722afd65d0cfb95366b3fb4">Sphere</a>(<span class="keywordtype">float</span> <a class="code" href="class_sphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>, <span class="keywordtype">int</span> sectors, <span class="keywordtype">int</span> stacks, <span class="keywordtype">bool</span> <a class="code" href="class_sphere.html#a854b32165519216d964aec8d67cbfcd2">smooth</a>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_sphere.html#a569c071e50a3e11f678630ee1a17737e">   11</a></span>&#160;    <a class="code" href="class_sphere.html#a569c071e50a3e11f678630ee1a17737e">~Sphere</a>() {}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_sphere.html#a966753e0cd7ec06174d904fbd238df7a">   13</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a966753e0cd7ec06174d904fbd238df7a">setSegments</a>(<span class="keywordtype">int</span> sectors, <span class="keywordtype">int</span> stacks){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            this-&gt;<a class="code" href="class_sphere.html#a7762d505ab0c2c0ea1feb12dc421cc7c">sectorCount</a> = sectors;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            this-&gt;<a class="code" href="class_sphere.html#a52995654165aceb091e144899c46953a">stackCount</a> = stacks;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_sphere.html#a71f570154541bbe50ed96f4c6518e5b8">   18</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a71f570154541bbe50ed96f4c6518e5b8">setProp</a>(<span class="keywordtype">float</span> rad){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        this-&gt;radius = rad;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// getters/setters</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_sphere.html#a925a4eccca10735eb3f9ec03ad87abf1">   24</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_sphere.html#a925a4eccca10735eb3f9ec03ad87abf1">getRadius</a>()<span class="keyword"> const                 </span>{ <span class="keywordflow">return</span> <a class="code" href="class_sphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_sphere.html#aecdbed80976f8b1b865e58502329a380">   25</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#aecdbed80976f8b1b865e58502329a380">getSectorCount</a>()<span class="keyword"> const              </span>{ <span class="keywordflow">return</span> <a class="code" href="class_sphere.html#a7762d505ab0c2c0ea1feb12dc421cc7c">sectorCount</a>; }</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_sphere.html#a54dc5b024b79cd4778b0b831ad48af05">   26</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a54dc5b024b79cd4778b0b831ad48af05">getStackCount</a>()<span class="keyword"> const               </span>{ <span class="keywordflow">return</span> <a class="code" href="class_sphere.html#a52995654165aceb091e144899c46953a">stackCount</a>; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a99d4a1fc3e1ba0b7312dc26b511ef14f">set</a>(<span class="keywordtype">float</span> <a class="code" href="class_sphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>, <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a7762d505ab0c2c0ea1feb12dc421cc7c">sectorCount</a>, <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a52995654165aceb091e144899c46953a">stackCount</a>, <span class="keywordtype">bool</span> <a class="code" href="class_sphere.html#a854b32165519216d964aec8d67cbfcd2">smooth</a>=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_sphere.html#a9a563adc1ae20e8b1866caf8f2fb0285">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a9a563adc1ae20e8b1866caf8f2fb0285">setRadius</a>(<span class="keywordtype">float</span> <a class="code" href="class_sphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_sphere.html#ad1bcba9994f79c49c1c0281f65bb1522">   29</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#ad1bcba9994f79c49c1c0281f65bb1522">setSectorCount</a>(<span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a7762d505ab0c2c0ea1feb12dc421cc7c">sectorCount</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_sphere.html#aa586ff623f02a810a4ee9f04c40cbf83">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#aa586ff623f02a810a4ee9f04c40cbf83">setStackCount</a>(<span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a52995654165aceb091e144899c46953a">stackCount</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_sphere.html#a4acdc17f810c98773ac07a8e78f4deee">   31</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a4acdc17f810c98773ac07a8e78f4deee">setSmooth</a>(<span class="keywordtype">bool</span> <a class="code" href="class_sphere.html#a854b32165519216d964aec8d67cbfcd2">smooth</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a310df0c749f596e264e7563c5b4f17e4">renderFill</a>() <span class="keyword">const</span>;                                  <span class="comment">// draw surface</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#add5f73228d9918426500eb0c44073677">renderWire</a>() <span class="keyword">const</span>;     <span class="comment">// draw lines only</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a6f8bcf3a8505c5e85cc8518e38f4a712">renderNormals</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// debug</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_sphere.html#a101fab878131bd3b0a4199a6a8206e73">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a101fab878131bd3b0a4199a6a8206e73">printSelf</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// member functions</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a0cd683c0658b6db0517cde33c79add0d">initData</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a7cb511b84be854943b3ff5865509920c">clearArrays</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a784f2529b648047b0b9724531f677fb4">addVertex</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a087e57b686246e1849fbdbf1f7c214f0">addNormal</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a433f61c3bf827e2df4e5918670933d67">addTexCoord</a>(<span class="keywordtype">float</span> s, <span class="keywordtype">float</span> t);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sphere.html#a83d4e72114cc69c4c787edaffa765cda">addIndices</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i1, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i2, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i3);</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_sphere.html#a4d98e0709c418acdb87a8bb5870e2de8">   50</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_sphere.html#a4d98e0709c418acdb87a8bb5870e2de8">computeFaceNormal</a>(<span class="keywordtype">float</span> x1, <span class="keywordtype">float</span> y1, <span class="keywordtype">float</span> z1,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                         <span class="keywordtype">float</span> x2, <span class="keywordtype">float</span> y2, <span class="keywordtype">float</span> z2,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                         <span class="keywordtype">float</span> x3, <span class="keywordtype">float</span> y3, <span class="keywordtype">float</span> z3);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// memeber vars</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_sphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">   55</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_sphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">radius</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_sphere.html#a7762d505ab0c2c0ea1feb12dc421cc7c">   56</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a7762d505ab0c2c0ea1feb12dc421cc7c">sectorCount</a>;                        <span class="comment">// longitude, # of slices</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_sphere.html#a52995654165aceb091e144899c46953a">   57</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a52995654165aceb091e144899c46953a">stackCount</a>;                         <span class="comment">// latitude, # of stacks</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_sphere.html#a854b32165519216d964aec8d67cbfcd2">   58</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_sphere.html#a854b32165519216d964aec8d67cbfcd2">smooth</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_sphere.html#a239de016db0579c471da3d8eb71ed79d">   59</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_sphere.html#a239de016db0579c471da3d8eb71ed79d">vertices</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_sphere.html#aed8e4b2bd996b1921367f59825eb128a">   60</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_sphere.html#aed8e4b2bd996b1921367f59825eb128a">normals</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_sphere.html#a7a6c93a9e00ae34f0307f982ba30a8a9">   61</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_sphere.html#a7a6c93a9e00ae34f0307f982ba30a8a9">texCoords</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_sphere.html#a5bb1463432974906b0734474dae50ab0">   62</a></span>&#160;    std::vector&lt;unsigned int&gt; <a class="code" href="class_sphere.html#a5bb1463432974906b0734474dae50ab0">indices</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_sphere.html#a5350bb8eef7e1a6f27234a449b7a844a">   63</a></span>&#160;    std::vector&lt;unsigned int&gt; <a class="code" href="class_sphere.html#a5350bb8eef7e1a6f27234a449b7a844a">lineIndices</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_sphere.html#a9b8c4e6aa0bea4570028509401833c3d">   64</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_sphere.html#a9b8c4e6aa0bea4570028509401833c3d">norm_lines</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_sphere.html#ad8198ba787d44f6db58c6a7aef1f5301">   67</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#ad8198ba787d44f6db58c6a7aef1f5301">vbo_vert</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_sphere.html#a94dd6aa1ca8629cd226fc1da245410ca">   68</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a94dd6aa1ca8629cd226fc1da245410ca">vbo_norm</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_sphere.html#aed8eb6d7416fc22286bae3194b3a543f">   69</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#aed8eb6d7416fc22286bae3194b3a543f">vbo_indi</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_sphere.html#ab1680d422d61e51a53eb3422a79beb4b">   70</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#ab1680d422d61e51a53eb3422a79beb4b">vbo_indi_lines</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_sphere.html#a7fd2b07f024cb64597bf2e6134f6914e">   71</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a7fd2b07f024cb64597bf2e6134f6914e">vbo_norm_lines</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_sphere.html#a941421a19079c1153dfb92bd37cfebe1">   72</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a941421a19079c1153dfb92bd37cfebe1">vao</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_sphere.html#a0f48a707a1a50ade200386ef62ae179e">   73</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_sphere.html#a0f48a707a1a50ade200386ef62ae179e">vao_2</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="ashape_8h_html"><div class="ttname"><a href="shape_8h.html">shape.h</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a4d98e0709c418acdb87a8bb5870e2de8"><div class="ttname"><a href="class_sphere.html#a4d98e0709c418acdb87a8bb5870e2de8">Sphere::computeFaceNormal</a></div><div class="ttdeci">std::vector&lt; float &gt; computeFaceNormal(float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3)</div></div>
+<div class="ttc" id="aclass_sphere_html_a854b32165519216d964aec8d67cbfcd2"><div class="ttname"><a href="class_sphere.html#a854b32165519216d964aec8d67cbfcd2">Sphere::smooth</a></div><div class="ttdeci">bool smooth</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00058">sphere.h:58</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a9b8c4e6aa0bea4570028509401833c3d"><div class="ttname"><a href="class_sphere.html#a9b8c4e6aa0bea4570028509401833c3d">Sphere::norm_lines</a></div><div class="ttdeci">std::vector&lt; float &gt; norm_lines</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00064">sphere.h:64</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a54dc5b024b79cd4778b0b831ad48af05"><div class="ttname"><a href="class_sphere.html#a54dc5b024b79cd4778b0b831ad48af05">Sphere::getStackCount</a></div><div class="ttdeci">int getStackCount() const</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00026">sphere.h:26</a></div></div>
+<div class="ttc" id="aclass_sphere_html_ad8198ba787d44f6db58c6a7aef1f5301"><div class="ttname"><a href="class_sphere.html#ad8198ba787d44f6db58c6a7aef1f5301">Sphere::vbo_vert</a></div><div class="ttdeci">unsigned int vbo_vert</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00067">sphere.h:67</a></div></div>
+<div class="ttc" id="aclass_sphere_html_aed8e4b2bd996b1921367f59825eb128a"><div class="ttname"><a href="class_sphere.html#aed8e4b2bd996b1921367f59825eb128a">Sphere::normals</a></div><div class="ttdeci">std::vector&lt; float &gt; normals</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00060">sphere.h:60</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a7cb511b84be854943b3ff5865509920c"><div class="ttname"><a href="class_sphere.html#a7cb511b84be854943b3ff5865509920c">Sphere::clearArrays</a></div><div class="ttdeci">void clearArrays()</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00078">sphere.cpp:78</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a7fd2b07f024cb64597bf2e6134f6914e"><div class="ttname"><a href="class_sphere.html#a7fd2b07f024cb64597bf2e6134f6914e">Sphere::vbo_norm_lines</a></div><div class="ttdeci">unsigned int vbo_norm_lines</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00071">sphere.h:71</a></div></div>
+<div class="ttc" id="aclass_sphere_html_ab1680d422d61e51a53eb3422a79beb4b"><div class="ttname"><a href="class_sphere.html#ab1680d422d61e51a53eb3422a79beb4b">Sphere::vbo_indi_lines</a></div><div class="ttdeci">unsigned int vbo_indi_lines</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00070">sphere.h:70</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a05c3a9397722afd65d0cfb95366b3fb4"><div class="ttname"><a href="class_sphere.html#a05c3a9397722afd65d0cfb95366b3fb4">Sphere::Sphere</a></div><div class="ttdeci">Sphere(float radius, int sectors, int stacks, bool smooth)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00012">sphere.cpp:12</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a101fab878131bd3b0a4199a6a8206e73"><div class="ttname"><a href="class_sphere.html#a101fab878131bd3b0a4199a6a8206e73">Sphere::printSelf</a></div><div class="ttdeci">void printSelf() const</div></div>
+<div class="ttc" id="aclass_sphere_html_a784f2529b648047b0b9724531f677fb4"><div class="ttname"><a href="class_sphere.html#a784f2529b648047b0b9724531f677fb4">Sphere::addVertex</a></div><div class="ttdeci">void addVertex(float x, float y, float z)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00210">sphere.cpp:210</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a239de016db0579c471da3d8eb71ed79d"><div class="ttname"><a href="class_sphere.html#a239de016db0579c471da3d8eb71ed79d">Sphere::vertices</a></div><div class="ttdeci">std::vector&lt; float &gt; vertices</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00059">sphere.h:59</a></div></div>
+<div class="ttc" id="aclass_sphere_html_aecdbed80976f8b1b865e58502329a380"><div class="ttname"><a href="class_sphere.html#aecdbed80976f8b1b865e58502329a380">Sphere::getSectorCount</a></div><div class="ttdeci">int getSectorCount() const</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00025">sphere.h:25</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a925a4eccca10735eb3f9ec03ad87abf1"><div class="ttname"><a href="class_sphere.html#a925a4eccca10735eb3f9ec03ad87abf1">Sphere::getRadius</a></div><div class="ttdeci">float getRadius() const</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00024">sphere.h:24</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a941421a19079c1153dfb92bd37cfebe1"><div class="ttname"><a href="class_sphere.html#a941421a19079c1153dfb92bd37cfebe1">Sphere::vao</a></div><div class="ttdeci">unsigned int vao</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00072">sphere.h:72</a></div></div>
+<div class="ttc" id="aclass_sphere_html_ae6f42f0da6679a2f0b4a22681ccccf38"><div class="ttname"><a href="class_sphere.html#ae6f42f0da6679a2f0b4a22681ccccf38">Sphere::radius</a></div><div class="ttdeci">float radius</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00055">sphere.h:55</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a087e57b686246e1849fbdbf1f7c214f0"><div class="ttname"><a href="class_sphere.html#a087e57b686246e1849fbdbf1f7c214f0">Sphere::addNormal</a></div><div class="ttdeci">void addNormal(float x, float y, float z)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00217">sphere.cpp:217</a></div></div>
+<div class="ttc" id="aclass_sphere_html_aa586ff623f02a810a4ee9f04c40cbf83"><div class="ttname"><a href="class_sphere.html#aa586ff623f02a810a4ee9f04c40cbf83">Sphere::setStackCount</a></div><div class="ttdeci">void setStackCount(int stackCount)</div></div>
+<div class="ttc" id="aclass_sphere_html_a83d4e72114cc69c4c787edaffa765cda"><div class="ttname"><a href="class_sphere.html#a83d4e72114cc69c4c787edaffa765cda">Sphere::addIndices</a></div><div class="ttdeci">void addIndices(unsigned int i1, unsigned int i2, unsigned int i3)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00230">sphere.cpp:230</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a71f570154541bbe50ed96f4c6518e5b8"><div class="ttname"><a href="class_sphere.html#a71f570154541bbe50ed96f4c6518e5b8">Sphere::setProp</a></div><div class="ttdeci">void setProp(float rad)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00018">sphere.h:18</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a9a563adc1ae20e8b1866caf8f2fb0285"><div class="ttname"><a href="class_sphere.html#a9a563adc1ae20e8b1866caf8f2fb0285">Sphere::setRadius</a></div><div class="ttdeci">void setRadius(float radius)</div></div>
+<div class="ttc" id="aclass_sphere_html_a7a6c93a9e00ae34f0307f982ba30a8a9"><div class="ttname"><a href="class_sphere.html#a7a6c93a9e00ae34f0307f982ba30a8a9">Sphere::texCoords</a></div><div class="ttdeci">std::vector&lt; float &gt; texCoords</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00061">sphere.h:61</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a99d4a1fc3e1ba0b7312dc26b511ef14f"><div class="ttname"><a href="class_sphere.html#a99d4a1fc3e1ba0b7312dc26b511ef14f">Sphere::set</a></div><div class="ttdeci">void set(float radius, int sectorCount, int stackCount, bool smooth=true)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00023">sphere.cpp:23</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a4acdc17f810c98773ac07a8e78f4deee"><div class="ttname"><a href="class_sphere.html#a4acdc17f810c98773ac07a8e78f4deee">Sphere::setSmooth</a></div><div class="ttdeci">void setSmooth(bool smooth)</div></div>
+<div class="ttc" id="aclass_shape_html"><div class="ttname"><a href="class_shape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00004">shape.h:5</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a5350bb8eef7e1a6f27234a449b7a844a"><div class="ttname"><a href="class_sphere.html#a5350bb8eef7e1a6f27234a449b7a844a">Sphere::lineIndices</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; lineIndices</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00063">sphere.h:63</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a569c071e50a3e11f678630ee1a17737e"><div class="ttname"><a href="class_sphere.html#a569c071e50a3e11f678630ee1a17737e">Sphere::~Sphere</a></div><div class="ttdeci">~Sphere()</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00011">sphere.h:11</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a6f8bcf3a8505c5e85cc8518e38f4a712"><div class="ttname"><a href="class_sphere.html#a6f8bcf3a8505c5e85cc8518e38f4a712">Sphere::renderNormals</a></div><div class="ttdeci">void renderNormals() const</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00068">sphere.cpp:68</a></div></div>
+<div class="ttc" id="aclass_sphere_html_add5f73228d9918426500eb0c44073677"><div class="ttname"><a href="class_sphere.html#add5f73228d9918426500eb0c44073677">Sphere::renderWire</a></div><div class="ttdeci">void renderWire() const</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00051">sphere.cpp:51</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a94dd6aa1ca8629cd226fc1da245410ca"><div class="ttname"><a href="class_sphere.html#a94dd6aa1ca8629cd226fc1da245410ca">Sphere::vbo_norm</a></div><div class="ttdeci">unsigned int vbo_norm</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00068">sphere.h:68</a></div></div>
+<div class="ttc" id="aclass_sphere_html_aed8eb6d7416fc22286bae3194b3a543f"><div class="ttname"><a href="class_sphere.html#aed8eb6d7416fc22286bae3194b3a543f">Sphere::vbo_indi</a></div><div class="ttdeci">unsigned int vbo_indi</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00069">sphere.h:69</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a310df0c749f596e264e7563c5b4f17e4"><div class="ttname"><a href="class_sphere.html#a310df0c749f596e264e7563c5b4f17e4">Sphere::renderFill</a></div><div class="ttdeci">void renderFill() const</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00035">sphere.cpp:35</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a433f61c3bf827e2df4e5918670933d67"><div class="ttname"><a href="class_sphere.html#a433f61c3bf827e2df4e5918670933d67">Sphere::addTexCoord</a></div><div class="ttdeci">void addTexCoord(float s, float t)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00224">sphere.cpp:224</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a0f48a707a1a50ade200386ef62ae179e"><div class="ttname"><a href="class_sphere.html#a0f48a707a1a50ade200386ef62ae179e">Sphere::vao_2</a></div><div class="ttdeci">unsigned int vao_2</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00073">sphere.h:73</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a7762d505ab0c2c0ea1feb12dc421cc7c"><div class="ttname"><a href="class_sphere.html#a7762d505ab0c2c0ea1feb12dc421cc7c">Sphere::sectorCount</a></div><div class="ttdeci">int sectorCount</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00056">sphere.h:56</a></div></div>
+<div class="ttc" id="aclass_sphere_html"><div class="ttname"><a href="class_sphere.html">Sphere</a></div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00007">sphere.h:7</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a5bb1463432974906b0734474dae50ab0"><div class="ttname"><a href="class_sphere.html#a5bb1463432974906b0734474dae50ab0">Sphere::indices</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; indices</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00062">sphere.h:62</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a52995654165aceb091e144899c46953a"><div class="ttname"><a href="class_sphere.html#a52995654165aceb091e144899c46953a">Sphere::stackCount</a></div><div class="ttdeci">int stackCount</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00057">sphere.h:57</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a0cd683c0658b6db0517cde33c79add0d"><div class="ttname"><a href="class_sphere.html#a0cd683c0658b6db0517cde33c79add0d">Sphere::initData</a></div><div class="ttdeci">void initData()</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00087">sphere.cpp:87</a></div></div>
+<div class="ttc" id="aclass_sphere_html_a966753e0cd7ec06174d904fbd238df7a"><div class="ttname"><a href="class_sphere.html#a966753e0cd7ec06174d904fbd238df7a">Sphere::setSegments</a></div><div class="ttdeci">void setSegments(int sectors, int stacks)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8h_source.html#l00013">sphere.h:13</a></div></div>
+<div class="ttc" id="aclass_sphere_html_ad1bcba9994f79c49c1c0281f65bb1522"><div class="ttname"><a href="class_sphere.html#ad1bcba9994f79c49c1c0281f65bb1522">Sphere::setSectorCount</a></div><div class="ttdeci">void setSectorCount(int sectorCount)</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="sphere_8h.html">sphere.h</a></li>
+    <li class="footer">Generado por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0 </li>
+  </ul>
+</div>
+</body>
+</html>

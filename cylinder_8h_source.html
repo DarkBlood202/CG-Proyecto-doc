@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CG - Proyecto: Fichero Fuente src/cylinder.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CG - Proyecto
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Proyecto computacion visual</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('cylinder_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">cylinder.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cylinder_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GEOMETRY_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GEOMETRY_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GL\glew.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="shape_8h.html">shape.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_cylinder.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cylinder.html">Cylinder</a> : <span class="keyword">public</span> <a class="code" href="class_shape.html">Shape</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_cylinder.html#ad5b07b5dd49b7ef255eb99071e92df67">Cylinder</a>(<span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#acca2e7dd772c62888ce157081a72f39d">baseRadius</a>=1.0f, <span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#af07f9b8deadf0adc8ec7485dc0b1ca30">topRadius</a>=1.0f, <span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#a24af2757d335f527cfbcfd2497c82eb7">height</a>=1.0f,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;             <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a9609ff8ac643fb6c5dadeb2749c04dd0">sectorCount</a>=36, <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a4105b8ac1d0a9213218a3bbf5cd87d82">stackCount</a>=1, <span class="keywordtype">bool</span> <a class="code" href="class_cylinder.html#a10ad8eeb9ad14610b2ff724b12ab2769">smooth</a>=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_cylinder.html#a05ab556f0ae3cd6e99d9d1f3caca80b3">   12</a></span>&#160;    <a class="code" href="class_cylinder.html#a05ab556f0ae3cd6e99d9d1f3caca80b3">~Cylinder</a>() {}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// funciones</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#a12a1a1aeaff735d4b33816a4a16d512f">set</a>(<span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#acca2e7dd772c62888ce157081a72f39d">baseRadius</a>, <span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#af07f9b8deadf0adc8ec7485dc0b1ca30">topRadius</a>, <span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#a24af2757d335f527cfbcfd2497c82eb7">height</a>, <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a9609ff8ac643fb6c5dadeb2749c04dd0">sectorCount</a>, <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a4105b8ac1d0a9213218a3bbf5cd87d82">stackCount</a>, <span class="keywordtype">bool</span> <a class="code" href="class_cylinder.html#a10ad8eeb9ad14610b2ff724b12ab2769">smooth</a>=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#a6cc9d04159a22088c4c81b54c85727c9">renderFill</a>() <span class="keyword">const</span>;     </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#af9de4a593c12d32835f5c3984bccd39b">renderWire</a>() <span class="keyword">const</span>;     </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#a83d700111fdf20d4897accf446303dcd">renderNormals</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#aa0325f609535b279eadc1f288d393ccd">clearArrays</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#acd4e192efea1bf4c42998d1292d6fb71">initData</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#a6dfbf746a77c6ac49a866d5a4c72d83f">buildUnitCircleVertices</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#af0417d8c48edfe68137d344227a6f86b">addVertex</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#a7dfeb85623fc9c6347130a2e0e7f9399">addNormal</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#add29f8f297de5c96a32f8c0ae0331a81">addTexCoord</a>(<span class="keywordtype">float</span> s, <span class="keywordtype">float</span> t);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#a4258cc820dab14832a87099444a819c7">addIndices</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i1, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i2, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i3);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_cylinder.html#a721c8d94f0c02958780a708210ac721c">getSideNormals</a>(); </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// ----------------------------------</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_cylinder.html#a84bcbdfcb84317d97e75c4a6c9bfe113">   31</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_cylinder.html#a84bcbdfcb84317d97e75c4a6c9bfe113">unitCircleVertices</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_cylinder.html#a811c611c187b3ca23211472a54bec884">   32</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_cylinder.html#a811c611c187b3ca23211472a54bec884">vertices</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_cylinder.html#a4a2616931a587096cd4db2a6acfafe77">   33</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_cylinder.html#a4a2616931a587096cd4db2a6acfafe77">normals</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_cylinder.html#a323d2f51ba424317155112c998dafb99">   34</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_cylinder.html#a323d2f51ba424317155112c998dafb99">texCoords</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_cylinder.html#a8cb400a4b349b6d95b632939f89a5a46">   35</a></span>&#160;    std::vector&lt;unsigned int&gt; <a class="code" href="class_cylinder.html#a8cb400a4b349b6d95b632939f89a5a46">indices</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_cylinder.html#add37905f211fec800c191576f1e6d5c3">   36</a></span>&#160;    std::vector&lt;unsigned int&gt; <a class="code" href="class_cylinder.html#add37905f211fec800c191576f1e6d5c3">lineIndices</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_cylinder.html#ae04099dc0b670f37546933f0e4c83877">   37</a></span>&#160;    std::vector&lt;float&gt; <a class="code" href="class_cylinder.html#ae04099dc0b670f37546933f0e4c83877">norm_lines</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_cylinder.html#a1662a809c05b5fbe8922eddbf6d86bb7">   39</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a1662a809c05b5fbe8922eddbf6d86bb7">vao</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_cylinder.html#a4bdcdcccdcf08868884426141104994d">   40</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a4bdcdcccdcf08868884426141104994d">vao_2</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_cylinder.html#ac922e9db1841c35b6e46ef4ca85608b1">   41</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#ac922e9db1841c35b6e46ef4ca85608b1">vbo_vert</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_cylinder.html#a312f071678fa854b7bdf80fe9fe43552">   42</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a312f071678fa854b7bdf80fe9fe43552">vbo_norm</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_cylinder.html#aa23a8fb02c63168fc11f020413bc9b13">   43</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#aa23a8fb02c63168fc11f020413bc9b13">vbo_indi</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_cylinder.html#afd02064df1638de3095025dbc6d9d71f">   44</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#afd02064df1638de3095025dbc6d9d71f">vbo_lines_indi</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_cylinder.html#abad1131632badd5059a83586244014c3">   45</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#abad1131632badd5059a83586244014c3">vbo_lines_norm</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_cylinder.html#acca2e7dd772c62888ce157081a72f39d">   47</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#acca2e7dd772c62888ce157081a72f39d">baseRadius</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_cylinder.html#af07f9b8deadf0adc8ec7485dc0b1ca30">   48</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#af07f9b8deadf0adc8ec7485dc0b1ca30">topRadius</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_cylinder.html#a24af2757d335f527cfbcfd2497c82eb7">   49</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#a24af2757d335f527cfbcfd2497c82eb7">height</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_cylinder.html#a9609ff8ac643fb6c5dadeb2749c04dd0">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a9609ff8ac643fb6c5dadeb2749c04dd0">sectorCount</a>;                        <span class="comment">// # of slices</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_cylinder.html#a4105b8ac1d0a9213218a3bbf5cd87d82">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a4105b8ac1d0a9213218a3bbf5cd87d82">stackCount</a>;                         <span class="comment">// # of stacks</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_cylinder.html#a985ebb5afe6b644269b14e123976720b">   52</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a985ebb5afe6b644269b14e123976720b">baseIndex</a>;                 <span class="comment">// starting index of base</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_cylinder.html#a49ce658f4da27412513d25042d4950fd">   53</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a49ce658f4da27412513d25042d4950fd">topIndex</a>;                  <span class="comment">// starting index of top</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_cylinder.html#a10ad8eeb9ad14610b2ff724b12ab2769">   54</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_cylinder.html#a10ad8eeb9ad14610b2ff724b12ab2769">smooth</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_cylinder.html#a4860d36671d6fcf0da4c06e628923a40">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#a4860d36671d6fcf0da4c06e628923a40">setSegments</a>(<span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a9609ff8ac643fb6c5dadeb2749c04dd0">sectorCount</a>, <span class="keywordtype">int</span> <a class="code" href="class_cylinder.html#a4105b8ac1d0a9213218a3bbf5cd87d82">stackCount</a>) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        this-&gt;sectorCount = <a class="code" href="class_cylinder.html#a9609ff8ac643fb6c5dadeb2749c04dd0">sectorCount</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        this-&gt;stackCount = <a class="code" href="class_cylinder.html#a4105b8ac1d0a9213218a3bbf5cd87d82">stackCount</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_cylinder.html#aa765730a5ce89a20081725bc708ffea4">   61</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cylinder.html#aa765730a5ce89a20081725bc708ffea4">setProp</a>(<span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#acca2e7dd772c62888ce157081a72f39d">baseRadius</a>, <span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#af07f9b8deadf0adc8ec7485dc0b1ca30">topRadius</a>, <span class="keywordtype">float</span> <a class="code" href="class_cylinder.html#a24af2757d335f527cfbcfd2497c82eb7">height</a>){</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        this-&gt;baseRadius = <a class="code" href="class_cylinder.html#acca2e7dd772c62888ce157081a72f39d">baseRadius</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        this-&gt;topRadius = <a class="code" href="class_cylinder.html#af07f9b8deadf0adc8ec7485dc0b1ca30">topRadius</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        this-&gt;height = <a class="code" href="class_cylinder.html#a24af2757d335f527cfbcfd2497c82eb7">height</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_cylinder_html_a4105b8ac1d0a9213218a3bbf5cd87d82"><div class="ttname"><a href="class_cylinder.html#a4105b8ac1d0a9213218a3bbf5cd87d82">Cylinder::stackCount</a></div><div class="ttdeci">int stackCount</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00051">cylinder.h:51</a></div></div>
+<div class="ttc" id="ashape_8h_html"><div class="ttname"><a href="shape_8h.html">shape.h</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a83d700111fdf20d4897accf446303dcd"><div class="ttname"><a href="class_cylinder.html#a83d700111fdf20d4897accf446303dcd">Cylinder::renderNormals</a></div><div class="ttdeci">void renderNormals() const</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00065">cylinder.cpp:65</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a811c611c187b3ca23211472a54bec884"><div class="ttname"><a href="class_cylinder.html#a811c611c187b3ca23211472a54bec884">Cylinder::vertices</a></div><div class="ttdeci">std::vector&lt; float &gt; vertices</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00032">cylinder.h:32</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a4860d36671d6fcf0da4c06e628923a40"><div class="ttname"><a href="class_cylinder.html#a4860d36671d6fcf0da4c06e628923a40">Cylinder::setSegments</a></div><div class="ttdeci">void setSegments(int sectorCount, int stackCount)</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00056">cylinder.h:56</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a721c8d94f0c02958780a708210ac721c"><div class="ttname"><a href="class_cylinder.html#a721c8d94f0c02958780a708210ac721c">Cylinder::getSideNormals</a></div><div class="ttdeci">std::vector&lt; float &gt; getSideNormals()</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00296">cylinder.cpp:296</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_ad5b07b5dd49b7ef255eb99071e92df67"><div class="ttname"><a href="class_cylinder.html#ad5b07b5dd49b7ef255eb99071e92df67">Cylinder::Cylinder</a></div><div class="ttdeci">Cylinder(float baseRadius=1.0f, float topRadius=1.0f, float height=1.0f, int sectorCount=36, int stackCount=1, bool smooth=true)</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00012">cylinder.cpp:12</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a1662a809c05b5fbe8922eddbf6d86bb7"><div class="ttname"><a href="class_cylinder.html#a1662a809c05b5fbe8922eddbf6d86bb7">Cylinder::vao</a></div><div class="ttdeci">unsigned int vao</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00039">cylinder.h:39</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_ac922e9db1841c35b6e46ef4ca85608b1"><div class="ttname"><a href="class_cylinder.html#ac922e9db1841c35b6e46ef4ca85608b1">Cylinder::vbo_vert</a></div><div class="ttdeci">unsigned int vbo_vert</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00041">cylinder.h:41</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_abad1131632badd5059a83586244014c3"><div class="ttname"><a href="class_cylinder.html#abad1131632badd5059a83586244014c3">Cylinder::vbo_lines_norm</a></div><div class="ttdeci">unsigned int vbo_lines_norm</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00045">cylinder.h:45</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a9609ff8ac643fb6c5dadeb2749c04dd0"><div class="ttname"><a href="class_cylinder.html#a9609ff8ac643fb6c5dadeb2749c04dd0">Cylinder::sectorCount</a></div><div class="ttdeci">int sectorCount</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00050">cylinder.h:50</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_af9de4a593c12d32835f5c3984bccd39b"><div class="ttname"><a href="class_cylinder.html#af9de4a593c12d32835f5c3984bccd39b">Cylinder::renderWire</a></div><div class="ttdeci">void renderWire() const</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00052">cylinder.cpp:52</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a4258cc820dab14832a87099444a819c7"><div class="ttname"><a href="class_cylinder.html#a4258cc820dab14832a87099444a819c7">Cylinder::addIndices</a></div><div class="ttdeci">void addIndices(unsigned int i1, unsigned int i2, unsigned int i3)</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00289">cylinder.cpp:289</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a49ce658f4da27412513d25042d4950fd"><div class="ttname"><a href="class_cylinder.html#a49ce658f4da27412513d25042d4950fd">Cylinder::topIndex</a></div><div class="ttdeci">unsigned int topIndex</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00053">cylinder.h:53</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_add29f8f297de5c96a32f8c0ae0331a81"><div class="ttname"><a href="class_cylinder.html#add29f8f297de5c96a32f8c0ae0331a81">Cylinder::addTexCoord</a></div><div class="ttdeci">void addTexCoord(float s, float t)</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00283">cylinder.cpp:283</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a323d2f51ba424317155112c998dafb99"><div class="ttname"><a href="class_cylinder.html#a323d2f51ba424317155112c998dafb99">Cylinder::texCoords</a></div><div class="ttdeci">std::vector&lt; float &gt; texCoords</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00034">cylinder.h:34</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a7dfeb85623fc9c6347130a2e0e7f9399"><div class="ttname"><a href="class_cylinder.html#a7dfeb85623fc9c6347130a2e0e7f9399">Cylinder::addNormal</a></div><div class="ttdeci">void addNormal(float x, float y, float z)</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00276">cylinder.cpp:276</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a6cc9d04159a22088c4c81b54c85727c9"><div class="ttname"><a href="class_cylinder.html#a6cc9d04159a22088c4c81b54c85727c9">Cylinder::renderFill</a></div><div class="ttdeci">void renderFill() const</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00033">cylinder.cpp:33</a></div></div>
+<div class="ttc" id="aclass_cylinder_html"><div class="ttname"><a href="class_cylinder.html">Cylinder</a></div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00008">cylinder.h:8</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a8cb400a4b349b6d95b632939f89a5a46"><div class="ttname"><a href="class_cylinder.html#a8cb400a4b349b6d95b632939f89a5a46">Cylinder::indices</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; indices</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00035">cylinder.h:35</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a05ab556f0ae3cd6e99d9d1f3caca80b3"><div class="ttname"><a href="class_cylinder.html#a05ab556f0ae3cd6e99d9d1f3caca80b3">Cylinder::~Cylinder</a></div><div class="ttdeci">~Cylinder()</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00012">cylinder.h:12</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a6dfbf746a77c6ac49a866d5a4c72d83f"><div class="ttname"><a href="class_cylinder.html#a6dfbf746a77c6ac49a866d5a4c72d83f">Cylinder::buildUnitCircleVertices</a></div><div class="ttdeci">void buildUnitCircleVertices()</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00253">cylinder.cpp:253</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a10ad8eeb9ad14610b2ff724b12ab2769"><div class="ttname"><a href="class_cylinder.html#a10ad8eeb9ad14610b2ff724b12ab2769">Cylinder::smooth</a></div><div class="ttdeci">bool smooth</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00054">cylinder.h:54</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_ae04099dc0b670f37546933f0e4c83877"><div class="ttname"><a href="class_cylinder.html#ae04099dc0b670f37546933f0e4c83877">Cylinder::norm_lines</a></div><div class="ttdeci">std::vector&lt; float &gt; norm_lines</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00037">cylinder.h:37</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a84bcbdfcb84317d97e75c4a6c9bfe113"><div class="ttname"><a href="class_cylinder.html#a84bcbdfcb84317d97e75c4a6c9bfe113">Cylinder::unitCircleVertices</a></div><div class="ttdeci">std::vector&lt; float &gt; unitCircleVertices</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00031">cylinder.h:31</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_af07f9b8deadf0adc8ec7485dc0b1ca30"><div class="ttname"><a href="class_cylinder.html#af07f9b8deadf0adc8ec7485dc0b1ca30">Cylinder::topRadius</a></div><div class="ttdeci">float topRadius</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00048">cylinder.h:48</a></div></div>
+<div class="ttc" id="aclass_shape_html"><div class="ttname"><a href="class_shape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00004">shape.h:5</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a4bdcdcccdcf08868884426141104994d"><div class="ttname"><a href="class_cylinder.html#a4bdcdcccdcf08868884426141104994d">Cylinder::vao_2</a></div><div class="ttdeci">unsigned int vao_2</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00040">cylinder.h:40</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a4a2616931a587096cd4db2a6acfafe77"><div class="ttname"><a href="class_cylinder.html#a4a2616931a587096cd4db2a6acfafe77">Cylinder::normals</a></div><div class="ttdeci">std::vector&lt; float &gt; normals</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00033">cylinder.h:33</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_afd02064df1638de3095025dbc6d9d71f"><div class="ttname"><a href="class_cylinder.html#afd02064df1638de3095025dbc6d9d71f">Cylinder::vbo_lines_indi</a></div><div class="ttdeci">unsigned int vbo_lines_indi</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00044">cylinder.h:44</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_aa765730a5ce89a20081725bc708ffea4"><div class="ttname"><a href="class_cylinder.html#aa765730a5ce89a20081725bc708ffea4">Cylinder::setProp</a></div><div class="ttdeci">void setProp(float baseRadius, float topRadius, float height)</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00061">cylinder.h:61</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a12a1a1aeaff735d4b33816a4a16d512f"><div class="ttname"><a href="class_cylinder.html#a12a1a1aeaff735d4b33816a4a16d512f">Cylinder::set</a></div><div class="ttdeci">void set(float baseRadius, float topRadius, float height, int sectorCount, int stackCount, bool smooth=true)</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00017">cylinder.cpp:17</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a24af2757d335f527cfbcfd2497c82eb7"><div class="ttname"><a href="class_cylinder.html#a24af2757d335f527cfbcfd2497c82eb7">Cylinder::height</a></div><div class="ttdeci">float height</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00049">cylinder.h:49</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_acd4e192efea1bf4c42998d1292d6fb71"><div class="ttname"><a href="class_cylinder.html#acd4e192efea1bf4c42998d1292d6fb71">Cylinder::initData</a></div><div class="ttdeci">void initData()</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00087">cylinder.cpp:87</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_aa0325f609535b279eadc1f288d393ccd"><div class="ttname"><a href="class_cylinder.html#aa0325f609535b279eadc1f288d393ccd">Cylinder::clearArrays</a></div><div class="ttdeci">void clearArrays()</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00076">cylinder.cpp:76</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a985ebb5afe6b644269b14e123976720b"><div class="ttname"><a href="class_cylinder.html#a985ebb5afe6b644269b14e123976720b">Cylinder::baseIndex</a></div><div class="ttdeci">unsigned int baseIndex</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00052">cylinder.h:52</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_a312f071678fa854b7bdf80fe9fe43552"><div class="ttname"><a href="class_cylinder.html#a312f071678fa854b7bdf80fe9fe43552">Cylinder::vbo_norm</a></div><div class="ttdeci">unsigned int vbo_norm</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00042">cylinder.h:42</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_add37905f211fec800c191576f1e6d5c3"><div class="ttname"><a href="class_cylinder.html#add37905f211fec800c191576f1e6d5c3">Cylinder::lineIndices</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; lineIndices</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00036">cylinder.h:36</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_aa23a8fb02c63168fc11f020413bc9b13"><div class="ttname"><a href="class_cylinder.html#aa23a8fb02c63168fc11f020413bc9b13">Cylinder::vbo_indi</a></div><div class="ttdeci">unsigned int vbo_indi</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00043">cylinder.h:43</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_acca2e7dd772c62888ce157081a72f39d"><div class="ttname"><a href="class_cylinder.html#acca2e7dd772c62888ce157081a72f39d">Cylinder::baseRadius</a></div><div class="ttdeci">float baseRadius</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8h_source.html#l00047">cylinder.h:47</a></div></div>
+<div class="ttc" id="aclass_cylinder_html_af0417d8c48edfe68137d344227a6f86b"><div class="ttname"><a href="class_cylinder.html#af0417d8c48edfe68137d344227a6f86b">Cylinder::addVertex</a></div><div class="ttdeci">void addVertex(float x, float y, float z)</div><div class="ttdef"><b>Definition:</b> <a href="cylinder_8cpp_source.html#l00269">cylinder.cpp:269</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="cylinder_8h.html">cylinder.h</a></li>
+    <li class="footer">Generado por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0 </li>
+  </ul>
+</div>
+</body>
+</html>

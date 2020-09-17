@@ -4,6 +4,7 @@ var controls_8hpp =
     [ "getTransf", "controls_8hpp.html#a1d3068a08f398aaf95adff009dbd974b", null ],
     [ "key_callback", "controls_8hpp.html#a88b0c2b0286bb6cf6f11ce1f9bcaabf2", null ],
     [ "mouse_button_callback", "controls_8hpp.html#ab01fbbe42050259077d50617ff408431", null ],
+    [ "resetTrans", "controls_8hpp.html#a0ed8061e6a81fcb55374517cd6e79264", null ],
     [ "scroll_callback", "controls_8hpp.html#a9c312d25e0112c67b47d4c944e0eff78", null ],
     [ "window_size_callback", "controls_8hpp.html#adb3580886429c1f945d8e63e4b84acdc", null ],
     [ "aspect", "controls_8hpp.html#a6a4366d6f2e9aee17d3360b104121619", null ],

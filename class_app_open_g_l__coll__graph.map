@@ -1,12 +1,12 @@
 <map id="AppOpenGL" name="AppOpenGL">
-<area shape="rect" id="node1" title=" " alt="" coords="386,799,501,1184"/>
-<area shape="rect" id="node2" href="$class_torus.html" title=" " alt="" coords="363,395,524,619"/>
-<area shape="rect" id="node3" href="$class_shape.html" title=" " alt="" coords="126,13,267,207"/>
-<area shape="rect" id="node7" href="$class_cylinder.html" title=" " alt="" coords="5,321,180,692"/>
-<area shape="rect" id="node10" href="$class_sphere.html" title=" " alt="" coords="205,321,338,692"/>
-<area shape="rect" id="node4" href="$class_vertex_array.html" title=" " alt="" coords="292,20,411,200"/>
-<area shape="rect" id="node5" href="$class_index_buffer.html" title=" " alt="" coords="434,5,551,215"/>
-<area shape="rect" id="node6" href="$class_vertex_buffer.html" title=" " alt="" coords="575,20,698,200"/>
-<area shape="rect" id="node8" href="$class_shader.html" title=" " alt="" coords="549,329,730,685"/>
-<area shape="rect" id="node9" href="$class_cubesphere.html" title=" " alt="" coords="755,292,937,721"/>
+<area shape="rect" id="node1" title=" " alt="" coords="534,799,648,1199"/>
+<area shape="rect" id="node2" href="$class_torus.html" title=" " alt="" coords="184,395,345,619"/>
+<area shape="rect" id="node3" href="$class_shape.html" title=" " alt="" coords="520,13,662,207"/>
+<area shape="rect" id="node7" href="$class_cylinder.html" title=" " alt="" coords="1094,321,1269,692"/>
+<area shape="rect" id="node10" href="$class_sphere.html" title=" " alt="" coords="524,321,658,692"/>
+<area shape="rect" id="node4" href="$class_vertex_array.html" title=" " alt="" coords="21,20,140,200"/>
+<area shape="rect" id="node5" href="$class_index_buffer.html" title=" " alt="" coords="191,5,308,215"/>
+<area shape="rect" id="node6" href="$class_vertex_buffer.html" title=" " alt="" coords="332,20,455,200"/>
+<area shape="rect" id="node8" href="$class_shader.html" title=" " alt="" coords="682,329,863,685"/>
+<area shape="rect" id="node9" href="$class_cubesphere.html" title=" " alt="" coords="888,292,1070,721"/>
 </map>

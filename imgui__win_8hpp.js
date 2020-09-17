@@ -2,6 +2,7 @@ var imgui__win_8hpp =
 [
     [ "cleanAll", "imgui__win_8hpp.html#ad70310cae3f568bb6659fc1c5a135ed0", null ],
     [ "editPropCone", "imgui__win_8hpp.html#a98c1c96be8e6eb3694a755d597696821", null ],
+    [ "editPropCube", "imgui__win_8hpp.html#a3e154324a583e8594171059d504099b6", null ],
     [ "editPropCylinder", "imgui__win_8hpp.html#a49075acca1587b0ecbd28634cb7408d9", null ],
     [ "editPropSphere", "imgui__win_8hpp.html#ab2aa42e737b568d34f534ec1324fdf18", null ],
     [ "editPropTorus", "imgui__win_8hpp.html#a275cf59496ed0c34dd53b269dc4e1b11", null ],
@@ -13,6 +14,9 @@ var imgui__win_8hpp =
     [ "con_heigth", "imgui__win_8hpp.html#a5437053ca066a1a3e8ce9453c3cb9369", null ],
     [ "con_prop_listener", "imgui__win_8hpp.html#af26754a8e0eaa9db8aeaee033cbc08c1", null ],
     [ "con_top_rad", "imgui__win_8hpp.html#a6dffdfb0eba4df87c07eb4da7bc811a8", null ],
+    [ "cub_prop_listener", "imgui__win_8hpp.html#a6a8a9284526b98982de163d76bc639a0", null ],
+    [ "cub_rad", "imgui__win_8hpp.html#a1ec168ee95664e81f122525dcc91f628", null ],
+    [ "cub_val", "imgui__win_8hpp.html#ae43f1ce2187e46f760e5487067b92512", null ],
     [ "cyl_base_rad", "imgui__win_8hpp.html#a90176aec3d4d9b35af18d8eaab167121", null ],
     [ "cyl_heigth", "imgui__win_8hpp.html#aa922466bacdffbdba09a7c8f64e59805", null ],
     [ "cyl_prop_listener", "imgui__win_8hpp.html#a7bed8a57130c70322d8ff4feb3611076", null ],
@@ -25,6 +29,8 @@ var imgui__win_8hpp =
     [ "fondo", "imgui__win_8hpp.html#a5deb1d776bcfe94c5d0a67968a8fe7a9", null ],
     [ "MAX_SEGMENTS", "imgui__win_8hpp.html#a90428a43c5d56c2a1c8037958fde73a6", null ],
     [ "MIN_SEGMENTS", "imgui__win_8hpp.html#aca6ad2f79d54e393c3d7de8a4f6c8488", null ],
+    [ "mov_ligth", "imgui__win_8hpp.html#a72454b9e6b2f1e2440ad017347672e87", null ],
+    [ "paint_cords_lines", "imgui__win_8hpp.html#a45abeb93884499553848f668005e8324", null ],
     [ "segments_event_listener", "imgui__win_8hpp.html#ad6a0ceb3f63235b6fe6d2a1c77bdae07", null ],
     [ "segments_x", "imgui__win_8hpp.html#afc2859f25367356154541de7d6d7b68c", null ],
     [ "segments_y", "imgui__win_8hpp.html#a09f3ec78ec70615d6f9e7e4151646a8d", null ],
@@ -37,6 +43,5 @@ var imgui__win_8hpp =
     [ "sph_rad", "imgui__win_8hpp.html#ada84cba926aedc685ce01927b226fb4e", null ],
     [ "tor_prop_listener", "imgui__win_8hpp.html#a6b8b404e94e093b87c7344242fce2d69", null ],
     [ "tor_R", "imgui__win_8hpp.html#a7c3e3e34f46408e57e15628158d18bf3", null ],
-    [ "tor_r", "imgui__win_8hpp.html#a259a1e460b073ff3ad1d69f23ba95496", null ],
-    [ "varRad", "imgui__win_8hpp.html#a4b9d8813fbe72c756b090384f3aabb26", null ]
+    [ "tor_r", "imgui__win_8hpp.html#a259a1e460b073ff3ad1d69f23ba95496", null ]
 ];

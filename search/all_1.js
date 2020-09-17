@@ -7,6 +7,5 @@ var searchData=
   ['bronzediffuse_22',['bronzeDiffuse',['../class_utils.html#a0e067c934dc0674a4a008c70661d936b',1,'Utils']]],
   ['bronzeshininess_23',['bronzeShininess',['../class_utils.html#a375b9407becaf0ee319120716a770f05',1,'Utils']]],
   ['bronzespecular_24',['bronzeSpecular',['../class_utils.html#a6c6d8c9d779382ad022bf2bdb3c9fc3e',1,'Utils']]],
-  ['buildunitcirclevertices_25',['buildUnitCircleVertices',['../class_cylinder.html#a6dfbf746a77c6ac49a866d5a4c72d83f',1,'Cylinder']]],
-  ['buildverticessmooth_26',['buildVerticesSmooth',['../class_cubesphere.html#aaf44ee1fab54dbbdbda175e9833fd6d1',1,'Cubesphere']]]
+  ['buildunitcirclevertices_25',['buildUnitCircleVertices',['../class_cylinder.html#a6dfbf746a77c6ac49a866d5a4c72d83f',1,'Cylinder']]]
 ];

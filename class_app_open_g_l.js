@@ -12,6 +12,7 @@ var class_app_open_g_l =
     [ "amt", "class_app_open_g_l.html#ac96933b22f243f89264bb3508d571b10", null ],
     [ "camera", "class_app_open_g_l.html#a2abc8d0e83b81332af6ecd1f78e9c27d", null ],
     [ "coneShape", "class_app_open_g_l.html#a452d92beff36b7ce4d7d6914272dcf1d", null ],
+    [ "coord_lines", "class_app_open_g_l.html#acdf911ab688fd7fefae73f914a8bdc72", null ],
     [ "cubeShape", "class_app_open_g_l.html#a4ed1001df519d750df6568608f8bfad0", null ],
     [ "currentLightPos", "class_app_open_g_l.html#a8bd1b1246cdbb90ebbfb4a7175815b53", null ],
     [ "cylinderShape", "class_app_open_g_l.html#ab54a19d4b359e378cab09473ad788860", null ],
@@ -42,6 +43,8 @@ var class_app_open_g_l =
     [ "specLoc", "class_app_open_g_l.html#a1d3eee09d07b1d1ebd8cea5e8cc9166d", null ],
     [ "sphereShape", "class_app_open_g_l.html#a054949f818d02f492cd5dcd071f2f52c", null ],
     [ "torusShape", "class_app_open_g_l.html#a9cbd6f699401b889a7ed7a3c4e1cd69f", null ],
+    [ "vao_coord_lines", "class_app_open_g_l.html#a3fdb3674a8bfa2f43a60fbc2d664c698", null ],
+    [ "vbo_coord_lines", "class_app_open_g_l.html#aa2a5aeb3e6efaee7486d313a7aa0f290", null ],
     [ "viewMat", "class_app_open_g_l.html#a28a06ef31dfb6c02fe06ec004fc31ffe", null ],
     [ "width", "class_app_open_g_l.html#a270bb37de05af6ac2acf2fd7f882db96", null ],
     [ "window", "class_app_open_g_l.html#a33f23b66f6aded42fff2223b6b35bd84", null ]
